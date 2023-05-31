@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 94%);
+    display: grid;
+    place-items: center;
+}
+
+main {
+    margin-top: 5em;
+    display: inline-block;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1em;
+    border-radius: 1em 1em 10em 1em;
+}
+
+.SessionForm {
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+.SessionForm article {
+    display: grid;
+}
+.SessionForm article:not(:last-child) {
+    margin-right: 1em;
+}
+
+label{
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 32px;
+    width: 5em;
+    border: 2px solid hsl(0, 0%, 94%);
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 7px;
+    outline: none;
+}
+input::placeholder {
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 32px;
+}
+
+.SessionButton{
+    position: relative;
+    display: flex;
+}
+
+.line{
+    position: absolute;
+    top: 29px;
+    width: 89%;
+    background: gray;
+}
+
+button{
+    z-index: 10;
+    margin-left: 85%;
+    border: none;
+    border-radius: 50%;
+    background: hsl(259, 100%, 65%);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.calculator article {
+    font-family: "Poppins-ExtraBoldIta", sans-serif;
+    color: hsl(0, 0%, 8%);
+    font-size: 60px;
+}
+.calculator article span {
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 375px) {
+    input {
+        font-family: "Poppins-Bold", sans-serif;
+        font-size: 32px;
+        width: 2.5em;
+        border: 2px solid hsl(0, 0%, 94%);
+        padding: .5rem 0 .5rem .5rem;
+        border-radius: 7px;
+        outline: none;
+    }
+
+    button{
+        z-index: 10;
+        margin-left: 80%;
+        border: none;
+        border-radius: 50%;
+        background: hsl(259, 100%, 65%);
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url("../fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+    font-family: 'Poppins-ExtraBoldIta';
+    src: url("../fonts/Poppins-ExtraBoldItalic.ttf");
+}
